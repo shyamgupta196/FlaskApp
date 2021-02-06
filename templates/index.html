@@ -1,0 +1,16 @@
+{%extends "base.html"%} {%block content%}
+<body>
+  <form method="POST" style="text-align: center" action='{{url_for("result")}}'>
+    <p>sepal length</p>
+    <input name="sepal length" type="text" />
+    <p>sepal width</p>
+    <input name="sepal width" />
+    <p>petal length</p>
+    <input name="petal length" />
+    <p>petal width</p>
+    <input name="petal width" />
+    <a href="http://localhost:5000/result"> </a>
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+{%endblock%}
